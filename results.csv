@@ -1,0 +1,6 @@
+Dataset,Model,Source Language,Target Language,Pass@1 (%),Paper
+CodeNet,GPT-4,Python,Java,88.55,https://openai.com/research/gpt-4
+Avatar,GPT-4,Java,C,87.12,https://openai.com/research/gpt-4
+CodeNet,StarCoder,Python,Java,50.12,https://arxiv.org/abs/2305.06161
+CodeNet,StarCoder,Java,Python,49.88,https://arxiv.org/abs/2305.06161
+CodeNet,GPT-4,Python,C,95.12,https://openai.com/research/gpt-4

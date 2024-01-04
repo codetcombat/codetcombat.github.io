@@ -11,10 +11,7 @@
   <title>Code Translation Combat</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
-  <!-- favicon.svg -->
-  <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👍</text></svg>"> -->
-  <!-- <link rel="icon" href="/favicon.svg" /> -->
-  <link rel="icon" href = "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/1024px/1f9d1-1f4bb.png">
+  <link rel="icon" href = "https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/1f916.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
 
   <style>
@@ -28,13 +25,57 @@
       width: 75%;
     }
 
-    th,
-    td {
-      text-align: left;
+    table {
+      width: 100%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1.5px solid black;
+      padding: 8px;
+      text-align: center;
     }
 
     th {
-      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      margin: auto;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1.5px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    .dropdown-container {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .dropdown-container div {
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown-container label {
+      min-width: auto;
+      margin-right: 10px;
+    }
+
+    .dropdown-container select {
+      min-width: 150px;
+      padding: 5px;
     }
 
     #notes {
@@ -51,10 +92,6 @@
       font-size: 1.2em;
       font-weight: 300;
       margin: 1em;
-    }
-
-    .form-select {
-      font-size: 1em;
     }
 
     @media screen and (max-width: 1400px) {
@@ -88,30 +125,99 @@
 
   </style>
 
+
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var file = './codenet.csv'; // Change this to your CSV file path
+    var file = 'results.csv'; // Change this to your CSV file path
+    var data;
 
     fetch(file)
       .then(response => response.text())
       .then(csvData => {
-        var table = document.getElementById('csvTable');
-        var lines = csvData.split('\n');
+        data = parseCSV(csvData);
 
-        lines.forEach(function(line) {
-          var row = document.createElement('tr');
-          var cells = line.split(',');
+        var header = data.shift(); // Remove and store the header row
+        data.sort(function(a, b) {
+          var passA = parseFloat(a[4]); // Pass@1 (%)
+          var passB = parseFloat(b[4]);
 
-          cells.forEach(function(cellData) {
-            var cell = document.createElement('td');
-            cell.appendChild(document.createTextNode(cellData));
-            row.appendChild(cell);
-          });
-
-          table.appendChild(row);
+          if (!isNaN(passA) && !isNaN(passB)) {
+            return passB - passA;
+          } else {
+            return isNaN(passA) ? 1 : -1;
+          }
         });
+
+        data.unshift(header); // Place the header row back
+
+        renderTable(data);
+
+        document.getElementById('modelDropdown').addEventListener('change', updateTable);
+        document.getElementById('sourceLangDropdown').addEventListener('change', updateTable);
+        document.getElementById('targetLangDropdown').addEventListener('change', updateTable);
+        document.getElementById('datasetDropdown').addEventListener('change', updateTable);
       })
       .catch(error => console.error('Error:', error));
+
+    function parseCSV(csvData) {
+      var lines = csvData.split('\n');
+      var parsedData = [];
+
+      lines.forEach(function(line) {
+        var cells = line.split(',');
+        parsedData.push(cells);
+      });
+
+      return parsedData;
+    }
+
+    function renderTable(tableData) {
+      var table = document.getElementById('csvTable');
+      table.innerHTML = '';
+
+      tableData.forEach(function(rowData, rowIndex) {
+        var row = document.createElement('tr');
+
+        rowData.slice(0, -1).forEach(function(cellData, cellIndex) { // Exclude first and last column
+          var cell = (rowIndex === 0) ? document.createElement('th') : document.createElement('td');
+
+          // Check if it's the first column (Model) and format it as a link
+          if (cellIndex === 1 && rowIndex !== 0) {
+            var link = document.createElement('a');
+            link.setAttribute('href', rowData[rowData.length - 1]); // URL from last column
+            link.textContent = cellData; // Display the model name as the link text
+            link.setAttribute('target', '_blank'); // Open link in a new tab
+            cell.appendChild(link);
+          } else if (cellIndex !== rowData.length - 1) { // Exclude the last column (Paper)
+            cell.appendChild(document.createTextNode(cellData));
+          }
+
+          row.appendChild(cell);
+        });
+
+        table.appendChild(row);
+      });
+    }
+
+    function updateTable() {
+      var model = document.getElementById('modelDropdown').value;
+      var sourceLang = document.getElementById('sourceLangDropdown').value;
+      var targetLang = document.getElementById('targetLangDropdown').value;
+      var dataset = document.getElementById('datasetDropdown').value;
+
+      var filteredData = data.filter(function(row, index) {
+        if (index === 0) return true;
+
+        return (
+          (model === 'All' || row[1] === model) &&
+          (sourceLang === 'All' || row[2] === sourceLang) &&
+          (targetLang === 'All' || row[3] === targetLang) &&
+          (dataset === 'All' || row[0] === dataset)
+        );
+      });
+
+      renderTable(filteredData);
+    }
   });
 </script>
 </head>
@@ -133,6 +239,44 @@
       <a href="https://github.com/codetcombat/codetcombat/issues/new?assignees=&labels=model+eval&projects=&template=model_eval_request.yml&title=%F0%9F%A4%97+%5BREQUEST%5D+-+%3CMODEL_NAME%3E">File a request</a>
       <p>to add your models on our leaderboard!</p>
     </div>
+
+    
+    <div class="dropdown-container">
+      <div>
+        <label for="datasetDropdown">Dataset:</label>
+        <select id="datasetDropdown">
+          <option value="All">All</option>
+          <option value="CodeNet">CodeNet</option>
+          <option value="Avatar">Avatar</option>
+        </select>
+      </div>
+      <div>
+        <label for="modelDropdown">Model:</label>
+        <select id="modelDropdown">
+          <option value="All">All</option>
+          <option value="GPT-4">GPT-4</option>
+          <option value="StarCoder">StarCoder</option>
+        </select>
+      </div>
+      <div>
+        <label for="sourceLangDropdown">Source Language:</label>
+        <select id="sourceLangDropdown">
+          <option value="All">All</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+        </select>
+      </div>
+      <div>
+        <label for="targetLangDropdown">Target Language:</label>
+        <select id="targetLangDropdown">
+          <option value="All">All</option>
+          <option value="Java">Java</option>
+          <option value="C">C</option>
+          <option value="Python">Python</option>
+        </select>
+      </div>
+    </div>
+
     <table id="csvTable" border="1"></table>
     <div id = "notes">
       <h3>📝 Notes</h3>
