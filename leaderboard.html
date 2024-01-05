@@ -128,97 +128,124 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var file = 'results.csv'; // Change this to your CSV file path
-    var data;
+  var file = 'results.csv'; // Change this to your CSV file path
+  var data;
+  var header;
 
-    fetch(file)
-      .then(response => response.text())
-      .then(csvData => {
-        data = parseCSV(csvData);
+  fetch(file)
+    .then(response => response.text())
+    .then(csvData => {
+      data = parseCSV(csvData);
+      header = data.shift(); // Remove and store the header row
 
-        var header = data.shift(); // Remove and store the header row
-        data.sort(function(a, b) {
-          var passA = parseFloat(a[4]); // Pass@1 (%)
-          var passB = parseFloat(b[4]);
+      renderTable(data);
+      sortTableBy('Pass@1', data); // Sort the table by Pass@1 initially
 
-          if (!isNaN(passA) && !isNaN(passB)) {
-            return passB - passA;
-          } else {
-            return isNaN(passA) ? 1 : -1;
-          }
-        });
+      document.getElementById('modelDropdown').addEventListener('change', updateTable);
+      document.getElementById('sourceLangDropdown').addEventListener('change', updateTable);
+      document.getElementById('targetLangDropdown').addEventListener('change', updateTable);
+      document.getElementById('datasetDropdown').addEventListener('change', updateTable);
+      document.getElementById('sortByDropdown').addEventListener('change', updateTable); // Listen for sorting column change
+    })
+    .catch(error => console.error('Error:', error));
 
-        data.unshift(header); // Place the header row back
+  function parseCSV(csvData) {
+    var lines = csvData.split('\n');
+    var parsedData = [];
 
-        renderTable(data);
+    lines.forEach(function(line) {
+      var cells = line.split(',');
+      parsedData.push(cells);
+    });
 
-        document.getElementById('modelDropdown').addEventListener('change', updateTable);
-        document.getElementById('sourceLangDropdown').addEventListener('change', updateTable);
-        document.getElementById('targetLangDropdown').addEventListener('change', updateTable);
-        document.getElementById('datasetDropdown').addEventListener('change', updateTable);
-      })
-      .catch(error => console.error('Error:', error));
+    return parsedData;
+  }
 
-    function parseCSV(csvData) {
-      var lines = csvData.split('\n');
-      var parsedData = [];
+  function renderTable(tableData) {
+    var table = document.getElementById('csvTable');
+    table.innerHTML = '';
+    table.appendChild(createRow(header, true)); // Re-insert the header row
 
-      lines.forEach(function(line) {
-        var cells = line.split(',');
-        parsedData.push(cells);
-      });
+    tableData.forEach(function(rowData) {
+      table.appendChild(createRow(rowData));
+    });
+  }
 
-      return parsedData;
-    }
+  function createRow(rowData, isHeader = false) {
+    var row = document.createElement('tr');
 
-    function renderTable(tableData) {
-      var table = document.getElementById('csvTable');
-      table.innerHTML = '';
+    rowData.forEach(function(cellData) {
+      var cell = isHeader ? document.createElement('th') : document.createElement('td');
 
-      tableData.forEach(function(rowData, rowIndex) {
-        var row = document.createElement('tr');
+      if (isHeader) {
+        cell.textContent = cellData;
+      } else {
+        if (cellData.startsWith('http')) {
+          var link = document.createElement('a');
+          link.setAttribute('href', cellData);
+          link.textContent = 'Link';
+          link.setAttribute('target', '_blank');
+          cell.appendChild(link);
+        } else {
+          cell.textContent = cellData;
+        }
+      }
 
-        rowData.slice(0, -1).forEach(function(cellData, cellIndex) { // Exclude first and last column
-          var cell = (rowIndex === 0) ? document.createElement('th') : document.createElement('td');
+      row.appendChild(cell);
+    });
 
-          // Check if it's the first column (Model) and format it as a link
-          if (cellIndex === 1 && rowIndex !== 0) {
-            var link = document.createElement('a');
-            link.setAttribute('href', rowData[rowData.length - 1]); // URL from last column
-            link.textContent = cellData; // Display the model name as the link text
-            link.setAttribute('target', '_blank'); // Open link in a new tab
-            cell.appendChild(link);
-          } else if (cellIndex !== rowData.length - 1) { // Exclude the last column (Paper)
-            cell.appendChild(document.createTextNode(cellData));
-          }
+    return row;
+  }
 
-          row.appendChild(cell);
-        });
+  function updateTable() {
+  var model = document.getElementById('modelDropdown').value;
+  var sourceLang = document.getElementById('sourceLangDropdown').value;
+  var targetLang = document.getElementById('targetLangDropdown').value;
+  var dataset = document.getElementById('datasetDropdown').value;
+  var sortBy = document.getElementById('sortByDropdown').value;
 
-        table.appendChild(row);
-      });
-    }
+  var filteredData = data.filter(function(row) {
+    // Check if the first cell contains 'Dataset' (assuming it's the header row)
+    var isHeaderRow = row[0] === 'Dataset';
 
-    function updateTable() {
-      var model = document.getElementById('modelDropdown').value;
-      var sourceLang = document.getElementById('sourceLangDropdown').value;
-      var targetLang = document.getElementById('targetLangDropdown').value;
-      var dataset = document.getElementById('datasetDropdown').value;
-
-      var filteredData = data.filter(function(row, index) {
-        if (index === 0) return true;
-
-        return (
-          (model === 'All' || row[1] === model) &&
-          (sourceLang === 'All' || row[2] === sourceLang) &&
-          (targetLang === 'All' || row[3] === targetLang) &&
-          (dataset === 'All' || row[0] === dataset)
-        );
-      });
-
-      renderTable(filteredData);
-    }
+    return (
+      isHeaderRow ||
+      (model === 'All' || row[1] === model) &&
+      (sourceLang === 'All' || row[2] === sourceLang) &&
+      (targetLang === 'All' || row[3] === targetLang) &&
+      (dataset === 'All' || row[0] === dataset)
+    );
   });
+
+  sortTableBy(sortBy, filteredData);
+}
+
+  function sortTableBy(sortBy, filteredData) {
+    var sortColumns = {
+      'Pass@1': 4,
+      'Pass@10': 5,
+      'Pass@100': 6,
+    };
+
+    var sortColumn = sortColumns[sortBy]; // Get the column index based on the selected criteria
+
+    if (sortColumn !== undefined) {
+      filteredData.sort(function(a, b) {
+        var passA = parseFloat(a[sortColumn]);
+        var passB = parseFloat(b[sortColumn]);
+
+        if (!isNaN(passA) && !isNaN(passB)) {
+          return passB - passA;
+        } else {
+          return isNaN(passA) ? 1 : -1;
+        }
+      });
+
+      renderTable(filteredData); // Render the table with the newly sorted data
+    }
+  }
+});
+
 </script>
 </head>
 
@@ -240,6 +267,9 @@
       <p>to add your models on our leaderboard!</p>
     </div>
 
+    <div class="d-flex flex-row justify-content-center">
+      <p> While other leaderboards assess abilities of LLMs to understand Natural Language (NL) for code synthesis, the ultimate way of assessing whether LLMs understand code syntax and semantics is code translation. <strong>Code Translation Combat</strong> serves as such leaderboard, and compares the ability of LLMs to understand what the code implements in source language and translate the same semantics in target language. </p>
+    </div>
     
     <div class="dropdown-container">
       <div>
@@ -258,6 +288,8 @@
           <option value="StarCoder">StarCoder</option>
         </select>
       </div>
+    </div>
+    <div class="dropdown-container">
       <div>
         <label for="sourceLangDropdown">Source Language:</label>
         <select id="sourceLangDropdown">
@@ -275,9 +307,18 @@
           <option value="Python">Python</option>
         </select>
       </div>
+      <div>
+        <label for="sortByDropdown">Sort By:</label>
+        <select id="sortByDropdown">
+          <option value="Pass@1">Pass@1</option>
+          <option value="Pass@10">Pass@10</option>
+          <option value="Pass@100">Pass@100</option>
+        </select>
+      </div>
     </div>
 
-    <table id="csvTable" border="1"></table>
+    <table id="csvTable"></table>
+
     <div id = "notes">
       <h3>📝 Notes</h3>
       <p class="inline-block mt-3">
@@ -286,6 +327,11 @@
         </ol>
       </p>
     </div>
+
+    <div class="d-flex flex-row justify-content-center">
+      <p> We would like to thank authors of <a href="https://evalplus.github.io/leaderboard.html" target="_blank">EvalPlus</a> for their artifacts and leaderboard template 🙏 </p>
+    </div>
+
   </div>
 
 
