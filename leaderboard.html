@@ -6,335 +6,337 @@
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&display=swap" rel="stylesheet">
 
 
-<head>
-  <meta charset="UTF-8">
-  <title>Code Translation Combat</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
-  <link rel="icon" href = "https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/1f916.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8">
+    <title>Code Translation Combat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+    <link rel="icon" href = "https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/1f916.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
 
-  <style>
-    body {
-      font-family: 'Trebuchet MS', sans-serif;
-      background-color: #FFFFFF;
-      color: #000000;
-    }
-
-    #content {
-      width: 75%;
-    }
-
-    table {
-      width: 100%;
-      margin: 0 auto;
-      border-collapse: collapse;
-    }
-
-    th, td {
-      border: 1.5px solid black;
-      padding: 8px;
-      text-align: center;
-    }
-
-    th {
-      font-weight: bold;
-    }
-
-    table {
-      width: 100%;
-      margin: auto;
-      border-collapse: collapse;
-    }
-
-    th, td {
-      border: 1.5px solid black;
-      padding: 8px;
-      text-align: center;
-    }
-
-    th {
-      font-weight: bold;
-    }
-
-    .dropdown-container {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .dropdown-container div {
-      display: flex;
-      align-items: center;
-    }
-
-    .dropdown-container label {
-      min-width: auto;
-      margin-right: 10px;
-    }
-
-    .dropdown-container select {
-      min-width: 150px;
-      padding: 5px;
-    }
-
-    #notes {
-      font-size: 1em;
-    }
-
-    #notes h3 {
-      margin-top: 1em;
-      font-size: 2em;
-      text-align: center;
-    }
-
-    #notes li {
-      font-size: 1.2em;
-      font-weight: 300;
-      margin: 1em;
-    }
-
-    @media screen and (max-width: 1400px) {
+    <style>
       body {
-        font-size: 1.6vw;
+        font-family: 'Trebuchet MS', sans-serif;
+        background-color: #FFFFFF;
+        color: #000000;
       }
 
       #content {
-        width: 100%;
-      }
-
-      h1 {
-        font-size: 2em;
-      }
-
-      h2 {
-        font-size: 1.6em;
-      }
-
-      h3 {
-        font-size: 1.2em;
+        width: 75%;
       }
 
       table {
-        font-size: small;
+        width: 100%;
+        margin: 0 auto;
+        border-collapse: collapse;
       }
 
-      
-    }
-
-
-  </style>
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-  var file = 'results.csv'; // Change this to your CSV file path
-  var data;
-  var header;
-
-  fetch(file)
-    .then(response => response.text())
-    .then(csvData => {
-      data = parseCSV(csvData);
-      header = data.shift(); // Remove and store the header row
-
-      renderTable(data);
-      sortTableBy('Pass@1', data); // Sort the table by Pass@1 initially
-
-      document.getElementById('modelDropdown').addEventListener('change', updateTable);
-      document.getElementById('sourceLangDropdown').addEventListener('change', updateTable);
-      document.getElementById('targetLangDropdown').addEventListener('change', updateTable);
-      document.getElementById('datasetDropdown').addEventListener('change', updateTable);
-      document.getElementById('sortByDropdown').addEventListener('change', updateTable); // Listen for sorting column change
-    })
-    .catch(error => console.error('Error:', error));
-
-  function parseCSV(csvData) {
-    var lines = csvData.split('\n');
-    var parsedData = [];
-
-    lines.forEach(function(line) {
-      var cells = line.split(',');
-      parsedData.push(cells);
-    });
-
-    return parsedData;
-  }
-
-  function renderTable(tableData) {
-    var table = document.getElementById('csvTable');
-    table.innerHTML = '';
-    table.appendChild(createRow(header, true)); // Re-insert the header row
-
-    tableData.forEach(function(rowData) {
-      table.appendChild(createRow(rowData));
-    });
-  }
-
-  function createRow(rowData, isHeader = false) {
-    var row = document.createElement('tr');
-
-    rowData.forEach(function(cellData) {
-      var cell = isHeader ? document.createElement('th') : document.createElement('td');
-
-      if (isHeader) {
-        cell.textContent = cellData;
-      } else {
-        if (cellData.startsWith('http')) {
-          var link = document.createElement('a');
-          link.setAttribute('href', cellData);
-          link.textContent = 'Link';
-          link.setAttribute('target', '_blank');
-          cell.appendChild(link);
-        } else {
-          cell.textContent = cellData;
-        }
+      th, td {
+        border: 1.5px solid black;
+        padding: 8px;
+        text-align: center;
       }
 
-      row.appendChild(cell);
-    });
+      th {
+        font-weight: bold;
+      }
 
-    return row;
-  }
+      table {
+        width: 100%;
+        margin: auto;
+        border-collapse: collapse;
+      }
 
-  function updateTable() {
-  var model = document.getElementById('modelDropdown').value;
-  var sourceLang = document.getElementById('sourceLangDropdown').value;
-  var targetLang = document.getElementById('targetLangDropdown').value;
-  var dataset = document.getElementById('datasetDropdown').value;
-  var sortBy = document.getElementById('sortByDropdown').value;
+      th, td {
+        border: 1.5px solid black;
+        padding: 8px;
+        text-align: center;
+      }
 
-  var filteredData = data.filter(function(row) {
-    // Check if the first cell contains 'Dataset' (assuming it's the header row)
-    var isHeaderRow = row[0] === 'Dataset';
+      th {
+        font-weight: bold;
+      }
 
-    return (
-      isHeaderRow ||
-      (model === 'All' || row[1] === model) &&
-      (sourceLang === 'All' || row[2] === sourceLang) &&
-      (targetLang === 'All' || row[3] === targetLang) &&
-      (dataset === 'All' || row[0] === dataset)
-    );
-  });
+      .dropdown-container {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
 
-  sortTableBy(sortBy, filteredData);
-}
+      .dropdown-container div {
+        display: flex;
+        align-items: center;
+      }
 
-  function sortTableBy(sortBy, filteredData) {
-    var sortColumns = {
-      'Pass@1': 4,
-      'Pass@10': 5,
-      'Pass@100': 6,
-    };
+      .dropdown-container label {
+        min-width: auto;
+        margin-right: 10px;
+      }
 
-    var sortColumn = sortColumns[sortBy]; // Get the column index based on the selected criteria
+      .dropdown-container select {
+        min-width: 150px;
+        padding: 5px;
+      }
 
-    if (sortColumn !== undefined) {
-      filteredData.sort(function(a, b) {
-        var passA = parseFloat(a[sortColumn]);
-        var passB = parseFloat(b[sortColumn]);
+      #notes {
+        font-size: 1em;
+      }
 
-        if (!isNaN(passA) && !isNaN(passB)) {
-          return passB - passA;
-        } else {
-          return isNaN(passA) ? 1 : -1;
+      #notes h3 {
+        margin-top: 1em;
+        font-size: 2em;
+        text-align: center;
+      }
+
+      #notes li {
+        font-size: 1.2em;
+        font-weight: 300;
+        margin: 1em;
+      }
+
+      @media screen and (max-width: 1400px) {
+        body {
+          font-size: 1.6vw;
         }
+
+        #content {
+          width: 100%;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        h2 {
+          font-size: 1.6em;
+        }
+
+        h3 {
+          font-size: 1.2em;
+        }
+
+        table {
+          font-size: small;
+        }
+
+        
+      }
+
+
+    </style>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var file = 'results.csv'; // Change this to your CSV file path
+    var data;
+    var header;
+
+    fetch(file)
+      .then(response => response.text())
+      .then(csvData => {
+        data = parseCSV(csvData);
+        header = data.shift(); // Remove and store the header row
+
+        renderTable(data);
+        sortTableBy('Pass@1', data); // Sort the table by Pass@1 initially
+
+        document.getElementById('modelDropdown').addEventListener('change', updateTable);
+        document.getElementById('sourceLangDropdown').addEventListener('change', updateTable);
+        document.getElementById('targetLangDropdown').addEventListener('change', updateTable);
+        document.getElementById('datasetDropdown').addEventListener('change', updateTable);
+        document.getElementById('sortByDropdown').addEventListener('change', updateTable); // Listen for sorting column change
+      })
+      .catch(error => console.error('Error:', error));
+
+    function parseCSV(csvData) {
+      var lines = csvData.split('\n');
+      var parsedData = [];
+
+      lines.forEach(function(line) {
+        var cells = line.split(',');
+        parsedData.push(cells);
       });
 
-      renderTable(filteredData); // Render the table with the newly sorted data
+      return parsedData;
     }
+
+    function renderTable(tableData) {
+      var table = document.getElementById('csvTable');
+      table.innerHTML = '';
+      table.appendChild(createRow(header, true)); // Re-insert the header row
+
+      tableData.forEach(function(rowData) {
+        table.appendChild(createRow(rowData));
+      });
+    }
+
+    function createRow(rowData, isHeader = false) {
+      var row = document.createElement('tr');
+
+      rowData.forEach(function(cellData) {
+        var cell = isHeader ? document.createElement('th') : document.createElement('td');
+
+        if (isHeader) {
+          cell.textContent = cellData;
+        } else {
+          if (cellData.startsWith('http')) {
+            var link = document.createElement('a');
+            link.setAttribute('href', cellData);
+            link.textContent = 'Link';
+            link.setAttribute('target', '_blank');
+            cell.appendChild(link);
+          } else {
+            cell.textContent = cellData;
+          }
+        }
+
+        row.appendChild(cell);
+      });
+
+      return row;
+    }
+
+    function updateTable() {
+    var model = document.getElementById('modelDropdown').value;
+    var sourceLang = document.getElementById('sourceLangDropdown').value;
+    var targetLang = document.getElementById('targetLangDropdown').value;
+    var dataset = document.getElementById('datasetDropdown').value;
+    var sortBy = document.getElementById('sortByDropdown').value;
+
+    var filteredData = data.filter(function(row) {
+      // Check if the first cell contains 'Dataset' (assuming it's the header row)
+      var isHeaderRow = row[0] === 'Dataset';
+
+      return (
+        isHeaderRow ||
+        (model === 'All' || row[1] === model) &&
+        (sourceLang === 'All' || row[2] === sourceLang) &&
+        (targetLang === 'All' || row[3] === targetLang) &&
+        (dataset === 'All' || row[0] === dataset)
+      );
+    });
+
+    sortTableBy(sortBy, filteredData);
   }
-});
 
-</script>
-</head>
+    function sortTableBy(sortBy, filteredData) {
+      var sortColumns = {
+        'Pass@1': 4,
+        'Pass@10': 5,
+        'Pass@100': 6,
+      };
 
-<body>
-  <div id="content" class="container-fluid d-flex flex-column align-items-center gap-3">
-    <h1 class="text-nowrap mt-5">🏆 Code Translation Combat 🏆</h1>
-    <h3 class="fw-light text-nowrap"><small id="warning">This leaderboard evaluates LLMs in Programming Language Translation<br></small></h2>
-    <div class="d-flex flex-row justify-content-center gap-3">
-      <a href="https://github.com/codetcombat/codetcombat"><img
-          src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
-          alt="github" class="img-fluid"></a>
-      <a href="http://arxiv.org/abs/2308.03109"><img
-          src="https://img.shields.io/badge/arXiv-2308.03109-b31b1b.svg?style=for-the-badge" alt="arxiv"
-          class="img-fluid"></a>
-    </div>
-    <div class="d-flex flex-row justify-content-center gap-1 mt-3 mb-0">
-      <p> &#129303; </p>
-      <a href="https://github.com/codetcombat/codetcombat/issues/new?assignees=&labels=model+eval&projects=&template=model_eval_request.yml&title=%F0%9F%A4%97+%5BREQUEST%5D+-+%3CMODEL_NAME%3E">File a request</a>
-      <p>to add your models on our leaderboard!</p>
-    </div>
+      var sortColumn = sortColumns[sortBy]; // Get the column index based on the selected criteria
 
-    <div class="d-flex flex-row justify-content-center">
-      <p> While other leaderboards assess abilities of LLMs to understand Natural Language (NL) for code synthesis, the ultimate way of assessing whether LLMs understand code syntax and semantics is code translation. <strong>Code Translation Combat</strong> serves as such leaderboard, and compares the ability of LLMs to understand what the code implements in source language and translate the same semantics in target language. </p>
-    </div>
-    
-    <div class="dropdown-container">
-      <div>
-        <label for="datasetDropdown">Dataset:</label>
-        <select id="datasetDropdown">
-          <option value="All">All</option>
-          <option value="CodeNet">CodeNet</option>
-          <option value="Avatar">Avatar</option>
-        </select>
+      if (sortColumn !== undefined) {
+        filteredData.sort(function(a, b) {
+          var passA = parseFloat(a[sortColumn]);
+          var passB = parseFloat(b[sortColumn]);
+
+          if (!isNaN(passA) && !isNaN(passB)) {
+            return passB - passA;
+          } else {
+            return isNaN(passA) ? 1 : -1;
+          }
+        });
+
+        renderTable(filteredData); // Render the table with the newly sorted data
+      }
+    }
+  });
+
+  </script>
+  </head>
+
+  <body>
+    <div id="content" class="container-fluid d-flex flex-column align-items-center gap-3">
+      <h1 class="text-nowrap mt-5">🏆 Code Translation Combat 🏆</h1>
+      <h3 class="fw-light text-nowrap"><small id="warning">This leaderboard evaluates LLMs in Programming Language Translation<br></small></h2>
+      <div class="d-flex flex-row justify-content-center gap-3">
+        <a href="https://github.com/codetcombat/codetcombat"><img
+            src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+            alt="github" class="img-fluid"></a>
+        <a href="http://arxiv.org/abs/2308.03109"><img
+            src="https://img.shields.io/badge/arXiv-2308.03109-b31b1b.svg?style=for-the-badge" alt="arxiv"
+            class="img-fluid"></a>
       </div>
-      <div>
-        <label for="modelDropdown">Model:</label>
-        <select id="modelDropdown">
-          <option value="All">All</option>
-          <option value="GPT-4">GPT-4</option>
-          <option value="StarCoder">StarCoder</option>
-        </select>
+      <div class="d-flex flex-row justify-content-center gap-1 mt-3 mb-0" style="font-size: larger;">
+        <p> 🚨 </p>
+        <a href="https://github.com/codetcombat/codetcombat/issues/new?assignees=&labels=model+eval&projects=&template=model_eval_request.yml&title=%F0%9F%A4%97+%5BREQUEST%5D+-+%3CMODEL_NAME%3E">File a request</a>
+        <p>to add your models on our leaderboard!🚨</p>
+      </div>
+
+      <div class="d-flex flex-row justify-content-center">
+        <p> While other leaderboards assess abilities of LLMs to understand Natural Language (NL) for code synthesis, the ultimate way of assessing whether LLMs understand code syntax and semantics is code translation. <strong>Code Translation Combat</strong> serves as such leaderboard, and compares the ability of LLMs to understand what the code implements in source language and translate the same semantics in target language. </p>
+      </div>
+
+      <div class="container-fluid d-flex flex-column align-items-center">
+        <h3 class="fw-light justify-content-center">📣 We are working hard on completing the leaderboard with 30+ models 🚀</h3>
+        <h3 class="fw-light justify-content-center">⚠️ The leaderboard will be publicly announced early April 2024 🗓️</h3>
+      </div>
+      
+      <div class="dropdown-container">
+        <div>
+          <label for="datasetDropdown">Dataset:</label>
+          <select id="datasetDropdown">
+            <option value="All">All</option>
+            <option value="CodeNet">CodeNet</option>
+            <option value="Avatar">Avatar</option>
+          </select>
+        </div>
+        <div>
+          <label for="modelDropdown">Model:</label>
+          <select id="modelDropdown">
+            <option value="All">All</option>
+            <option value="GPT-4">GPT-4</option>
+            <option value="StarCoder">StarCoder</option>
+          </select>
+        </div>
+      </div>
+      <div class="dropdown-container">
+        <div>
+          <label for="sourceLangDropdown">Source Language:</label>
+          <select id="sourceLangDropdown">
+            <option value="All">All</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+          </select>
+        </div>
+        <div>
+          <label for="targetLangDropdown">Target Language:</label>
+          <select id="targetLangDropdown">
+            <option value="All">All</option>
+            <option value="Java">Java</option>
+            <option value="C">C</option>
+            <option value="Python">Python</option>
+          </select>
+        </div>
+        <div>
+          <label for="sortByDropdown">Sort By:</label>
+          <select id="sortByDropdown">
+            <option value="Pass@1">Pass@1</option>
+            <option value="Pass@10">Pass@10</option>
+            <option value="Pass@100">Pass@100</option>
+          </select>
+        </div>
+      </div>
+
+      <table id="csvTable"></table>
+
+      <div id = "notes">
+        <h3>📝 Notes</h3>
+        <p class="inline-block mt-3">
+          <ol>
+            <li>It is the model providers' responsibility to avoid data contamination as much as possible. In other words, we cannot guarantee if the evaluated models are contaminated or not.</li>
+          </ol>
+        </p>
+      </div>
+
+      <div class="d-flex flex-row justify-content-center">
+        <p> We would like to thank authors of <a href="https://evalplus.github.io/leaderboard.html" target="_blank">EvalPlus</a> for their artifacts and leaderboard template 🙏 </p>
       </div>
     </div>
-    <div class="dropdown-container">
-      <div>
-        <label for="sourceLangDropdown">Source Language:</label>
-        <select id="sourceLangDropdown">
-          <option value="All">All</option>
-          <option value="Python">Python</option>
-          <option value="Java">Java</option>
-        </select>
-      </div>
-      <div>
-        <label for="targetLangDropdown">Target Language:</label>
-        <select id="targetLangDropdown">
-          <option value="All">All</option>
-          <option value="Java">Java</option>
-          <option value="C">C</option>
-          <option value="Python">Python</option>
-        </select>
-      </div>
-      <div>
-        <label for="sortByDropdown">Sort By:</label>
-        <select id="sortByDropdown">
-          <option value="Pass@1">Pass@1</option>
-          <option value="Pass@10">Pass@10</option>
-          <option value="Pass@100">Pass@100</option>
-        </select>
-      </div>
-    </div>
 
-    <table id="csvTable"></table>
-
-    <div id = "notes">
-      <h3>📝 Notes</h3>
-      <p class="inline-block mt-3">
-        <ol>
-          <li>It is the model providers' responsibility to avoid data contamination as much as possible. In other words, we cannot guarantee if the evaluated models are contaminated or not.</li>
-        </ol>
-      </p>
-    </div>
-
-    <div class="d-flex flex-row justify-content-center">
-      <p> We would like to thank authors of <a href="https://evalplus.github.io/leaderboard.html" target="_blank">EvalPlus</a> for their artifacts and leaderboard template 🙏 </p>
-    </div>
-
-  </div>
-
-
-</body>
-
+  </body>
 </html>
