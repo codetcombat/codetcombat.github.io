@@ -78,6 +78,14 @@
         padding: 5px;
       }
 
+      .citation-box {
+            border-left: 5px solid #333;
+            padding: 10px;
+            margin: 10px;
+            background-color: #f9f9f9;
+            font-style: italic;
+      }
+
       #notes {
         font-size: 1em;
       }
@@ -291,16 +299,29 @@
       </div>
 
       <div class="d-flex flex-row justify-content-center">
-        <p style="font-size: large;"> While other leaderboards assess abilities of LLMs to understand Natural Language (NL) for code synthesis, the ultimate way of assessing whether LLMs understand code syntax and semantics is code translation. <strong>Code Lingua</strong> serves as such leaderboard, and compares the ability of LLMs to understand what the code implements in source language and translate the same semantics in target language. </p>
+        <p style="font-size: large;"> While other leaderboards assess abilities of LLMs to understand Natural Language (NL) for code synthesis, the ultimate way of assessing whether LLMs understand code syntax and semantics is code translation. <strong>Code Lingua</strong> serves as such leaderboard, and compares the ability of LLMs to understand what the code implements in source language and translate the same semantics in target language. The dataset used in this leaderboard can be accessed on <a href="https://huggingface.co/icatlab-uiuc">HuggingFace</a> 🤗.</p>
       </div>
 
+      <div class="container-fluid d-flex flex-column align-items-center">
+        <h3 class="fw-light justify-content-center">🙏 Please cite our paper if you are using this leaderboard in your work 🙏</h3>
+      </div>
+
+      <code class="citation-box">
+        <strong>@inproceedings{pan2024lost,<br>
+        &nbsp;&nbsp;title={Lost in Translation: A Study of Bugs Introduced by Large Language Models while Translating Code},<br>
+        &nbsp;&nbsp;author={Pan, Rangeet and Ibrahimzada, Ali Reza and Krishna, Rahul and Sankar, Divya and Wassi, Lambert Pouguem and Merler, Michele and Sobolev, Boris and Pavuluri, Raju and Sinha, Saurabh and Jabbarvand, Reyhaneh},<br>
+        &nbsp;&nbsp;booktitle={ACM/IEEE International Conference on Software Engineering},<br>
+        &nbsp;&nbsp;year={2024}<br>
+        }</strong>
+      </code>
+      
       <!-- <div class="container-fluid d-flex flex-column align-items-center">
         <h3 class="fw-light justify-content-center">📣 We are working hard on completing the leaderboard with 30+ models 🚀</h3>
         <h3 class="fw-light justify-content-center">⚠️ The leaderboard will be publicly announced early April 2024 🗓️</h3>
       </div> -->
 
       <div class="container-fluid d-flex flex-column align-items-center">
-        <h4 class="fw-light justify-content-center">✉️ Please reach out to <a href="https://alirezai.cs.illinois.edu" target="_blank">Ali</a> (<a href="mailto:alirezai@illinois.edu">alirezai@illinois.edu</a>) for any questions or enquiries ✉️</h4>
+        <h4 class="fw-light justify-content-center">✉️ You can reach out to <a href="https://alirezai.cs.illinois.edu" target="_blank">Ali</a> (<a href="mailto:alirezai@illinois.edu">alirezai@illinois.edu</a>) for any questions or enquiries about the leaderboard ✉️</h4>
       </div>
 
       <div class="dropdown-container">
@@ -369,6 +390,7 @@
           <ol>
             <li>We use Pass@1* (greedy decoding with temperature=0), Pass@1 and Pass@5 for evaluating LLMs in our leaderboard. For Pass@1 and Pass@5, we report the max value from temperatures 0.2 and 0.8.</li> 
             <li>It is the model providers' responsibility to avoid data contamination as much as possible. In other words, we cannot guarantee if the evaluated models are contaminated or not.</li>
+            <li>We used the version of GPT-4 from May 2023.</li>
           </ol>
         </p>
       </div>
@@ -376,9 +398,10 @@
       <div id="notes">
         <h3>🤗 More Leaderboards</h3>
         <p style="font-size: large;">In addition to <strong>Code Lingua</strong> leaderboards, it is recommended to comprehensively understand LLM coding ability through a
-        diverse set of benchmarks and leaderboards:</p>
+        diverse set of benchmarks and leaderboards, such as:</p>
         <p class="inline-block mt-3">
           <ol>
+            <li><a href="https://evalplus.github.io/leaderboard.html">EvalPlus</a></li>            
             <li><a href="https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard">Big Code Models Leaderboard</a></li>
             <li><a href="https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard">Chatbot Arena Leaderboard</a></li>
             <li><a href="https://github.com/amazon-science/cceval">CrossCodeEval</a></li>
