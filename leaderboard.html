@@ -104,6 +104,17 @@
         margin-right: 10px; /* Adjust the value as needed */
       }
 
+      #modelCheckboxes {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      #modelCheckboxes div {
+        white-space: nowrap;
+        margin-right: 10px;
+        margin-bottom: 5px; /* Add margin bottom to create space between rows */
+      }
+
       #notes {
         font-size: 1em;
       }
@@ -307,6 +318,8 @@
         <a href="https://github.com/codetlingua/codetlingua"><img
             src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
             alt="github" class="img-fluid"></a>
+        <a href="https://huggingface.co/icatlab-uiuc"><img src="https://img.shields.io/badge/%F0%9F%A4%97Huggingface-lightsalmon.svg?style=for-the-badge"
+            alt="huggingface" class="img-fluid"></a>
         <a href="http://arxiv.org/abs/2308.03109"><img
             src="https://img.shields.io/badge/Paper-ICSE'24-a55fed.svg?style=for-the-badge" alt="paper"
             class="img-fluid"></a>
@@ -340,44 +353,76 @@
       </div> -->
 
       <div class="container-fluid d-flex flex-column align-items-center">
-        <h4 class="fw-light justify-content-center">✉️ You can reach out to <a href="https://alirezai.cs.illinois.edu" target="_blank">Ali</a> (<a href="mailto:alirezai@illinois.edu">alirezai@illinois.edu</a>) for any questions or enquiries about the leaderboard ✉️</h4>
+        <h4 class="fw-light justify-content-center" style="align-self: center;">✉️ You can reach out to <a href="https://alirezai.cs.illinois.edu" target="_blank">Ali</a> (<a href="mailto:alirezai@illinois.edu">alirezai@illinois.edu</a>) for any questions about the leaderboard ✉️</h4>
       </div>
 
       <div class="checkbox-container">
         <div>
           <label style="font-weight: bolder;">Dataset:</label>
-          <div id="datasetCheckboxes">
-            <input type="checkbox" id="CodeNet" name="dataset" value="CodeNet" checked>
-            <label for="CodeNet">CodeNet</label>
-            <input type="checkbox" id="Avatar" name="dataset" value="Avatar" checked>
-            <label for="Avatar">Avatar</label>
+          <div id="datasetCheckboxes" style="display: flex;">
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="CodeNet" name="dataset" value="CodeNet" checked>
+              <label style="margin-left: 5px;" for="CodeNet">CodeNet</label>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="Avatar" name="dataset" value="Avatar" checked>
+              <label style="margin-left: 5px;" for="Avatar">Avatar</label>
+            </div>
           </div>
         </div>
         <br>
         <div>
           <label style="font-weight: bolder;">Model:</label>
-          <div id="modelCheckboxes">
-            <input type="checkbox" id="GPT-4" name="model" value="GPT-4" checked>
-            <label for="GPT-4">GPT-4</label>            
-            <input type="checkbox" id="CodeLlama-7B" name="model" value="CodeLlama-7B" checked>
-            <label for="CodeLlama-7B">CodeLlama-7B</label>
-            <input type="checkbox" id="CodeLlama-13B" name="model" value="CodeLlama-13B" checked>
-            <label for="CodeLlama-13B">CodeLlama-13B</label>
-            <input type="checkbox" id="CodeLlama-34B" name="model" value="CodeLlama-34B" checked>
-            <label for="CodeLlama-34B">CodeLlama-34B</label>
-            <input type="checkbox" id="Magicoder-S-CL-7B" name="model" value="Magicoder-S-CL-7B" checked>
-            <label for="Magicoder-S-CL-7B">Magicoder-S-CL-7B</label>
-            <input type="checkbox" id="Magicoder-S-DS-6.7B" name="model" value="Magicoder-S-DS-6.7B" checked>
-            <label for="Magicoder-S-DS-6.7B">Magicoder-S-DS-6.7B</label>
-            <input type="checkbox" id="OctoCoder" name="model" value="OctoCoder" checked>
-            <label for="OctoCoder">OctoCoder</label>
-            <input type="checkbox" id="WizardCoder-15B" name="model" value="WizardCoder-15B" checked>
-            <label for="WizardCoder-15B">WizardCoder-15B</label>
-            <input type="checkbox" id="WizardCoder-33B" name="model" value="WizardCoder-33B" checked>
-            <label for="WizardCoder-33B">WizardCoder-33B</label>
-            <br>
-            <input type="checkbox" id="Mixtral-8x7b-instruct" name="model" value="Mixtral-8x7b-instruct" checked>
-            <label for="Mixtral-8x7b-instruct">Mixtral-8x7b-instruct</label>
+          <div id="modelCheckboxes" style="display: flex;">
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="GPT-4" name="model" value="GPT-4" checked>
+              <label style="margin-left: 5px;" for="GPT-4">GPT-4</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="CodeLlama-7B" name="model" value="CodeLlama-7B" checked>
+              <label style="margin-left: 5px;" for="CodeLlama-7B">CodeLlama-7B</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="CodeLlama-13B" name="model" value="CodeLlama-13B" checked>
+              <label style="margin-left: 5px;" for="CodeLlama-13B">CodeLlama-13B</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="CodeLlama-34B" name="model" value="CodeLlama-34B" checked>
+              <label style="margin-left: 5px;" for="CodeLlama-34B">CodeLlama-34B</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="Magicoder-S-CL-7B" name="model" value="Magicoder-S-CL-7B" checked>
+              <label style="margin-left: 5px;" for="Magicoder-S-CL-7B">Magicoder-S-CL-7B</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="Magicoder-S-DS-6.7B" name="model" value="Magicoder-S-DS-6.7B" checked>
+              <label style="margin-left: 5px;" for="Magicoder-S-DS-6.7B">Magicoder-S-DS-6.7B</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="OctoCoder" name="model" value="OctoCoder" checked>
+              <label style="margin-left: 5px;" for="OctoCoder">OctoCoder</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="WizardCoder-15B" name="model" value="WizardCoder-15B" checked>
+              <label style="margin-left: 5px;" for="WizardCoder-15B">WizardCoder-15B</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="WizardCoder-33B" name="model" value="WizardCoder-33B" checked>
+              <label style="margin-left: 5px;" for="WizardCoder-33B">WizardCoder-33B</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="Mixtral-8x7b-instruct" name="model" value="Mixtral-8x7b-instruct" checked>
+              <label style="margin-left: 5px;" for="Mixtral-8x7b-instruct">Mixtral-8x7b-instruct</label>
+            </div>
           </div>
         </div>
       </div>
@@ -385,33 +430,62 @@
       <div class="checkbox-container">
         <div>
           <label style="font-weight: bolder;">Source Language:</label>
-          <div id="sourceLangCheckboxes">
-            <input type="checkbox" id="JavaSource" name="sourceLang" value="Java">
-            <label for="JavaSource">Java</label>
-            <input type="checkbox" id="CSource" name="sourceLang" value="C">
-            <label for="CSource">C</label>
-            <input type="checkbox" id="PythonSource" name="sourceLang" value="Python" checked>
-            <label for="PythonSource">Python</label>
-            <input type="checkbox" id="CPlusPlusSource" name="sourceLang" value="C++">
-            <label for="CPlusPlusSource">C++</label>
-            <input type="checkbox" id="GoSource" name="sourceLang" value="Go">
-            <label for="GoSource">Go</label>
+          <div id="sourceLangCheckboxes" style="display: flex;">
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="JavaSource" name="sourceLang" value="Java">
+              <label style="margin-left: 5px;" for="JavaSource">Java</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="CSource" name="sourceLang" value="C">
+              <label style="margin-left: 5px;" for="CSource">C</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="PythonSource" name="sourceLang" value="Python" checked>
+              <label style="margin-left: 5px;" for="PythonSource">Python</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="CPlusPlusSource" name="sourceLang" value="C++">
+              <label style="margin-left: 5px;" for="CPlusPlusSource">C++</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="GoSource" name="sourceLang" value="Go">
+              <label style="margin-left: 5px;" for="GoSource">Go</label>
+            </div>
           </div>
         </div>
         <br>
         <div>
           <label style="font-weight: bolder;">Target Language:</label>
-          <div id="targetLangCheckboxes">
-            <input type="checkbox" id="JavaTarget" name="targetLang" value="Java" checked>
-            <label for="JavaTarget">Java</label>
-            <input type="checkbox" id="CTarget" name="targetLang" value="C">
-            <label for="CTarget">C</label>
-            <input type="checkbox" id="PythonTarget" name="targetLang" value="Python">
-            <label for="PythonTarget">Python</label>
-            <input type="checkbox" id="CPlusPlusTarget" name="targetLang" value="C++">
-            <label for="CPlusPlusTarget">C++</label>
-            <input type="checkbox" id="GoTarget" name="targetLang" value="Go">
-            <label for="GoTarget">Go</label>
+          <div id="targetLangCheckboxes" style="display: flex;">
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="JavaTarget" name="targetLang" value="Java" checked>
+              <label style="margin-left: 5px;" for="JavaTarget">Java</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="CTarget" name="targetLang" value="C">
+              <label style="margin-left: 5px;" for="CTarget">C</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="PythonTarget" name="targetLang" value="Python">
+              <label style="margin-left: 5px;" for="PythonTarget">Python</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="CPlusPlusTarget" name="targetLang" value="C++">
+              <label style="margin-left: 5px;" for="CPlusPlusTarget">C++</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="GoTarget" name="targetLang" value="Go">
+              <label style="margin-left: 5px;" for="GoTarget">Go</label>
+            </div>
           </div>
         </div>
         <br>
@@ -454,7 +528,7 @@
             <li><a href="https://fudanselab-classeval.github.io/">ClassEval</a></li>
             <li><a href="https://crux-eval.github.io/leaderboard.html">CRUXEval</a></li>
             <li><a href="https://evo-eval.github.io/">Evo-Eval</a></li>
-            <li><a href="https://github.com/01-ai/HumanEval.jl">HumanEval.jl - Julia version HumanEval with EvalPlus test cases</a></li>
+            <li><a href="https://github.com/01-ai/HumanEval.jl">HumanEval.jl</a></li>
             <li><a href="https://infi-coder.github.io/inficoder-eval/">InfiCoder-Eval</a></li>
             <li><a href="https://livecodebench.github.io/leaderboard.html">LiveCodeBench</a></li>
             <li><a href="https://github.com/Leolty/repobench">RepoBench</a></li>
