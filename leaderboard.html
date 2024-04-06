@@ -166,6 +166,7 @@
 
         renderTable(data);
         sortTableBy('Pass@1*', data); // Sort the table by Pass@1* initially
+        updateTable(); // Filter the table based on the selected checkboxes
 
         document.getElementById('datasetCheckboxes').addEventListener('change', updateTable);
         document.getElementById('modelCheckboxes').addEventListener('change', updateTable);
@@ -382,15 +383,15 @@
         <div>
           <label style="font-weight: bolder;">Source Language:</label>
           <div id="sourceLangCheckboxes">
-            <input type="checkbox" id="JavaSource" name="sourceLang" value="Java" checked>
+            <input type="checkbox" id="JavaSource" name="sourceLang" value="Java">
             <label for="JavaSource">Java</label>
-            <input type="checkbox" id="CSource" name="sourceLang" value="C" checked>
+            <input type="checkbox" id="CSource" name="sourceLang" value="C">
             <label for="CSource">C</label>
             <input type="checkbox" id="PythonSource" name="sourceLang" value="Python" checked>
             <label for="PythonSource">Python</label>
-            <input type="checkbox" id="CPlusPlusSource" name="sourceLang" value="C++" checked>
+            <input type="checkbox" id="CPlusPlusSource" name="sourceLang" value="C++">
             <label for="CPlusPlusSource">C++</label>
-            <input type="checkbox" id="GoSource" name="sourceLang" value="Go" checked>
+            <input type="checkbox" id="GoSource" name="sourceLang" value="Go">
             <label for="GoSource">Go</label>
           </div>
         </div>
@@ -400,13 +401,13 @@
           <div id="targetLangCheckboxes">
             <input type="checkbox" id="JavaTarget" name="targetLang" value="Java" checked>
             <label for="JavaTarget">Java</label>
-            <input type="checkbox" id="CTarget" name="targetLang" value="C" checked>
+            <input type="checkbox" id="CTarget" name="targetLang" value="C">
             <label for="CTarget">C</label>
-            <input type="checkbox" id="PythonTarget" name="targetLang" value="Python" checked>
+            <input type="checkbox" id="PythonTarget" name="targetLang" value="Python">
             <label for="PythonTarget">Python</label>
-            <input type="checkbox" id="CPlusPlusTarget" name="targetLang" value="C++" checked>
+            <input type="checkbox" id="CPlusPlusTarget" name="targetLang" value="C++">
             <label for="CPlusPlusTarget">C++</label>
-            <input type="checkbox" id="GoTarget" name="targetLang" value="Go" checked>
+            <input type="checkbox" id="GoTarget" name="targetLang" value="Go">
             <label for="GoTarget">Go</label>
           </div>
         </div>
@@ -423,39 +424,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="dropdown-container">
-        <div>
-          <label for="sourceLangDropdown">Source Language:</label>
-          <select id="sourceLangDropdown">
-            <option value="All">All</option>
-            <option value="Java">Java</option>
-            <option value="C">C</option>
-            <option value="Python">Python</option>
-            <option value="C++">C++</option>
-            <option value="Go">Go</option>
-          </select>
-        </div>
-        <div>
-          <label for="targetLangDropdown">Target Language:</label>
-          <select id="targetLangDropdown">
-            <option value="All">All</option>
-            <option value="Java">Java</option>
-            <option value="C">C</option>
-            <option value="Python">Python</option>
-            <option value="C++">C++</option>
-            <option value="Go">Go</option>
-          </select>
-        </div>
-        <div>
-          <label for="sortByDropdown">Sort By:</label>
-          <select id="sortByDropdown">
-            <option value="Pass@1*">Pass@1*</option>
-            <option value="Pass@1">Pass@1</option>
-            <option value="Pass@5">Pass@5</option>
-          </select>
-        </div>
-      </div> -->
 
       <table id="csvTable"></table>
 
