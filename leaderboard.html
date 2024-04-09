@@ -57,6 +57,9 @@
         border-collapse: collapse;
       }
 
+      table tr:first-child {
+        background-color: lightgray;
+      }
       th, td {
         border: 1.5px solid black;
         padding: 8px;
@@ -339,12 +342,12 @@
       </div>
 
       <code class="citation-box">
-        <strong>@inproceedings{pan2024lost,<br>
-        &nbsp;&nbsp;title={Lost in Translation: A Study of Bugs Introduced by Large Language Models while Translating Code},<br>
-        &nbsp;&nbsp;author={Pan, Rangeet and Ibrahimzada, Ali Reza and Krishna, Rahul and Sankar, Divya and Wassi, Lambert Pouguem and Merler, Michele and Sobolev, Boris and Pavuluri, Raju and Sinha, Saurabh and Jabbarvand, Reyhaneh},<br>
-        &nbsp;&nbsp;booktitle={ACM/IEEE International Conference on Software Engineering},<br>
-        &nbsp;&nbsp;year={2024}<br>
-        }</strong>
+        <strong><span style="color: rgb(0, 0, 130);">@inproceedings</span><span style="color: black;">{</span><span style="color: darkred;">pan2024lost</span><span style="color: black;">,</span><br>
+        &nbsp;&nbsp;<span style="color: teal;">title</span><span style="color: black;"> = </span>{Lost in Translation: A Study of Bugs Introduced by Large Language Models while Translating Code}<span style="color: black;">,</span><br>
+        &nbsp;&nbsp;<span style="color: teal;">author</span><span style="color: black;"> = </span>{Pan, Rangeet and Ibrahimzada, Ali Reza and Krishna, Rahul and Sankar, Divya and Wassi, Lambert Pouguem and Merler, Michele and Sobolev, Boris and Pavuluri, Raju and Sinha, Saurabh and Jabbarvand, Reyhaneh}<span style="color: black;">,</span><br>
+        &nbsp;&nbsp;<span style="color: teal;">booktitle</span><span style="color: black;"> = </span>{ACM/IEEE International Conference on Software Engineering}<span style="color: black;">,</span><br>
+        &nbsp;&nbsp;<span style="color: teal;">year<span style="color: black;"> = </span></span>{2024}<br>
+        <span style="color: black;">}</span></strong>
       </code>
       
       <!-- <div class="container-fluid d-flex flex-column align-items-center">
@@ -357,6 +360,7 @@
       </div>
 
       <div class="checkbox-container">
+        <div style="margin: 20px 0; border-top: 2px solid black;"></div>
         <div>
           <label style="font-weight: bolder;">Dataset:</label>
           <div id="datasetCheckboxes" style="display: flex;">
@@ -370,7 +374,7 @@
             </div>
           </div>
         </div>
-        <br>
+        <div style="margin: 20px 0; border-top: 1px dashed black;"></div>
         <div>
           <label style="font-weight: bolder;">Model:</label>
           <div id="modelCheckboxes" style="display: flex;">
@@ -431,9 +435,8 @@
           </div>
           <label style="font-weight: bolder; color: red;">[Models in progress: DeepSeekCoder, StarCoder, StarCoder 2]</label>
         </div>
-      </div>
 
-      <div class="checkbox-container">
+        <div style="margin: 20px 0; border-top: 1px dashed black;"></div>
         <div>
           <label style="font-weight: bolder;">Source Language:</label>
           <div id="sourceLangCheckboxes" style="display: flex;">
@@ -463,7 +466,7 @@
             </div>
           </div>
         </div>
-        <br>
+        <div style="margin: 20px 0; border-top: 1px dashed black;"></div>
         <div>
           <label style="font-weight: bolder;">Target Language:</label>
           <div id="targetLangCheckboxes" style="display: flex;">
@@ -494,7 +497,7 @@
             </div>
           </div>
         </div>
-        <br>
+        <div style="margin: 20px 0; border-top: 1px dashed black;"></div>
         <div>
           <label style="font-weight: bolder;">Sort By:</label>
           <div id="sortByCheckboxes">
@@ -506,6 +509,7 @@
             <label for="Pass5">Pass@5</label>
           </div>
         </div>
+        <div style="margin: 20px 0; border-top: 2px solid black;"></div>
       </div>
 
       <table id="csvTable"></table>
