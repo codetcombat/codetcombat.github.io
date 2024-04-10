@@ -107,6 +107,21 @@
         margin-right: 10px; /* Adjust the value as needed */
       }
 
+      .checkbox-container2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .checkbox-container2 > div {
+        flex: 1 1 25%;
+        /* margin-right: 1%; */
+      }
+
+      .checkbox-container2 > div:last-child {
+        margin-right: 0;
+      }
+
       #modelCheckboxes {
         display: flex;
         flex-wrap: wrap;
@@ -315,7 +330,12 @@
 
   <body>
     <div id="content" class="container-fluid d-flex flex-column gap-3">
-      <h1 class="text-nowrap mt-5" style="align-self: center;">🏆 Code Lingua 🏆</h1>
+
+      <div class="align-items-center justify-content-center" style="width: 100%; display: flex;">
+        <img src="misc/ibm.png" style="width: 17%; margin-right: auto;" alt="IBM">
+        <h1 class="text-nowrap mt-5" style="font-size: 300%; margin-bottom: 4%;">🏆 Code Lingua 🏆</h1>
+        <img src="misc/uiuc.png" style="width: 20%; margin-left: auto;" alt="University of Illinois">
+      </div>
       <h3 class="fw-light text-nowrap" style="align-self: center;"><small id="warning">This leaderboard evaluates LLMs in Programming Language Translation<br></small></h2>
       <div class="d-flex flex-row justify-content-center gap-3">
         <a href="https://github.com/codetlingua/codetlingua"><img
@@ -364,20 +384,6 @@
       <div class="checkbox-container">
         <div style="margin: 20px 0; border-top: 2px solid black;"></div>
         <div>
-          <label style="font-weight: bolder;">Dataset:</label>
-          <div id="datasetCheckboxes" style="display: flex;">
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="CodeNet" name="dataset" value="CodeNet" checked>
-              <label style="margin-left: 5px;" for="CodeNet">CodeNet</label>
-            </div>
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="Avatar" name="dataset" value="Avatar" checked>
-              <label style="margin-left: 5px;" for="Avatar">Avatar</label>
-            </div>
-          </div>
-        </div>
-        <div style="margin: 20px 0; border-top: 1px dashed black;"></div>
-        <div>
           <label style="font-weight: bolder;">Model:</label>
           <div id="modelCheckboxes" style="display: flex;">
             <div style="display: flex; align-items: center;">
@@ -388,6 +394,11 @@
             <div style="display: flex; align-items: center;">
               <input type="checkbox" id="GPT-4-0613" name="model" value="GPT-4-0613" checked>
               <label style="margin-left: 5px;" for="GPT-4-0613">GPT-4-0613</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="GPT-3.5-Turbo" name="model" value="GPT-3.5-Turbo" checked>
+              <label style="margin-left: 5px;" for="GPT-3.5-Turbo">GPT-3.5-Turbo</label>
             </div>
 
             <div style="display: flex; align-items: center;">
@@ -451,78 +462,75 @@
             </div>
 
           </div>
-          <label style="font-weight: bolder; color: red;">[Models in progress: DeepSeekCoder-6.7B-Instruct, DeepSeekCoder-33B-Instruct, Claude-3-Opus, GPT-3.5-Turbo]</label>
+          <label style="font-weight: bolder; color: red;">[Models in progress: DeepSeekCoder-6.7B-Instruct, DeepSeekCoder-33B-Instruct, Claude-3-Opus]</label>
+        </div>
+      </div>
+      <div style="border-top: 1px dashed black;"></div>
+      <div class="checkbox-container2">
+        <div>
+          <label style="font-weight: bolder;">Dataset:</label>
+          <div id="datasetCheckboxes">
+            <input type="checkbox" id="CodeNet" name="dataset" value="CodeNet" checked>
+            <label style="margin-left: 5px;" for="CodeNet">CodeNet</label>
+            <br>
+            <input type="checkbox" id="Avatar" name="dataset" value="Avatar" checked>
+            <label style="margin-left: 5px;" for="Avatar">Avatar</label>
+          </div>
         </div>
 
-        <div style="margin: 20px 0; border-top: 1px dashed black;"></div>
         <div>
           <label style="font-weight: bolder;">Source Language:</label>
-          <div id="sourceLangCheckboxes" style="display: flex;">
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="JavaSource" name="sourceLang" value="Java">
-              <label style="margin-left: 5px;" for="JavaSource">Java</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="CSource" name="sourceLang" value="C">
-              <label style="margin-left: 5px;" for="CSource">C</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="PythonSource" name="sourceLang" value="Python" checked>
-              <label style="margin-left: 5px;" for="PythonSource">Python</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="CPlusPlusSource" name="sourceLang" value="C++">
-              <label style="margin-left: 5px;" for="CPlusPlusSource">C++</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="GoSource" name="sourceLang" value="Go">
-              <label style="margin-left: 5px;" for="GoSource">Go</label>
-            </div>
+          <div id="sourceLangCheckboxes">
+            <input type="checkbox" id="JavaSource" name="sourceLang" value="Java">
+            <label style="margin-left: 5px;" for="JavaSource">Java</label>
+            <br>
+            <input type="checkbox" id="CSource" name="sourceLang" value="C">
+            <label style="margin-left: 5px;" for="CSource">C</label>
+            <br>
+            <input type="checkbox" id="PythonSource" name="sourceLang" value="Python" checked>
+            <label style="margin-left: 5px;" for="PythonSource">Python</label>
+            <br>
+            <input type="checkbox" id="CPlusPlusSource" name="sourceLang" value="C++">
+            <label style="margin-left: 5px;" for="CPlusPlusSource">C++</label>
+            <br>
+            <input type="checkbox" id="GoSource" name="sourceLang" value="Go">
+            <label style="margin-left: 5px;" for="GoSource">Go</label>
           </div>
         </div>
-        <div style="margin: 20px 0; border-top: 1px dashed black;"></div>
         <div>
           <label style="font-weight: bolder;">Target Language:</label>
-          <div id="targetLangCheckboxes" style="display: flex;">
+          <div id="targetLangCheckboxes">
 
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="JavaTarget" name="targetLang" value="Java" checked>
-              <label style="margin-left: 5px;" for="JavaTarget">Java</label>
-            </div>
+            <input type="checkbox" id="JavaTarget" name="targetLang" value="Java" checked>
+            <label style="margin-left: 5px;" for="JavaTarget">Java</label>
+            <br>
 
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="CTarget" name="targetLang" value="C">
-              <label style="margin-left: 5px;" for="CTarget">C</label>
-            </div>
+            <input type="checkbox" id="CTarget" name="targetLang" value="C">
+            <label style="margin-left: 5px;" for="CTarget">C</label>
+            <br>
 
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="PythonTarget" name="targetLang" value="Python">
-              <label style="margin-left: 5px;" for="PythonTarget">Python</label>
-            </div>
+            <input type="checkbox" id="PythonTarget" name="targetLang" value="Python">
+            <label style="margin-left: 5px;" for="PythonTarget">Python</label>
+            <br>
 
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="CPlusPlusTarget" name="targetLang" value="C++">
-              <label style="margin-left: 5px;" for="CPlusPlusTarget">C++</label>
-            </div>
+            <input type="checkbox" id="CPlusPlusTarget" name="targetLang" value="C++">
+            <label style="margin-left: 5px;" for="CPlusPlusTarget">C++</label>
+            <br>
 
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="GoTarget" name="targetLang" value="Go">
-              <label style="margin-left: 5px;" for="GoTarget">Go</label>
-            </div>
+            <input type="checkbox" id="GoTarget" name="targetLang" value="Go">
+            <label style="margin-left: 5px;" for="GoTarget">Go</label>
+
           </div>
         </div>
-        <div style="margin: 20px 0; border-top: 1px dashed black;"></div>
         <div>
           <label style="font-weight: bolder;">Sort By:</label>
           <div id="sortByCheckboxes">
             <input type="radio" id="Pass1Star" name="sortBy" value="Pass@1*" checked>
             <label for="Pass1Star">Pass@1*</label>
+            <br>
             <input type="radio" id="Pass1" name="sortBy" value="Pass@1">
             <label for="Pass1">Pass@1</label>
+            <br>
             <input type="radio" id="Pass5" name="sortBy" value="Pass@5">
             <label for="Pass5">Pass@5</label>
           </div>
