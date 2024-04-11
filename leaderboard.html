@@ -334,7 +334,7 @@
       <div class="align-items-center justify-content-center" style="width: 100%; display: flex;">
         <img src="misc/ibm.png" style="width: 17%; margin-right: auto;" alt="IBM">
         <h1 class="text-nowrap mt-5" style="font-size: 400%; margin-bottom: 4%;">🏆 Code Lingua 🏆</h1>
-        <img src="misc/uiuc.png" style="width: 15%; margin-left: auto; margin-top: 1%;" alt="University of Illinois">
+        <img src="misc/uiuc.png" style="width: 15%; margin-left: auto; margin-top: 1%;" alt="Intelligent CAT">
       </div>
       <h3 class="fw-light text-nowrap" style="align-self: center;"><small id="warning">This leaderboard evaluates LLMs in Programming Language Translation<br></small></h2>
       <div class="d-flex flex-row justify-content-center gap-3">
@@ -472,7 +472,7 @@
             </div>
 
           </div>
-          <label style="font-weight: bolder; color: red;">[Models in progress: DeepSeekCoder-33B-Instruct]</label>
+          <!-- <label style="font-weight: bolder; color: red;">[Models in progress: DeepSeekCoder-33B-Instruct]</label> -->
         </div>
       </div>
       <div style="border-top: 1px dashed black;"></div>
@@ -480,7 +480,10 @@
         <div>
           <label style="font-weight: bolder;">Dataset:</label>
           <div id="datasetCheckboxes">
-            <input type="checkbox" id="CodeNet" name="dataset" value="CodeNet" checked>
+            <input type="checkbox" id="All Dataset" name="dataset" value="All Dataset" checked>
+            <label style="margin-left: 5px;" for="All Dataset">All Dataset</label>
+            <br>
+            <input type="checkbox" id="CodeNet" name="dataset" value="CodeNet">
             <label style="margin-left: 5px;" for="CodeNet">CodeNet</label>
             <br>
             <input type="checkbox" id="Avatar" name="dataset" value="Avatar">
@@ -555,6 +558,7 @@
         <p class="inline-block mt-3">
           <ol>
             <li>We use Pass@1* (greedy decoding with temperature=0), Pass@1 and Pass@5 for evaluating LLMs in our leaderboard. For Pass@1 and Pass@5, we report the max value from temperatures 0.2 and 0.8.</li> 
+            <li>For "All Dataset", the scores are averaged over each source-target language pair.</li>
             <li>It is the model providers' responsibility to avoid data contamination as much as possible. In other words, we cannot guarantee if the evaluated models are contaminated or not.</li>
           </ol>
         </p>
