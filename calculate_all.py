@@ -41,5 +41,5 @@ for model in average_scores:
         if src in ['verified', 'conversational', 'paper']:
             continue
         for trg in average_scores[model][src]:
-            print(f"All,{model},{src},{trg},{average_scores[model][src][trg]['pass_1_greedy']},{average_scores[model][src][trg]['pass_1']},{average_scores[model][src][trg]['pass_5']},{average_scores[model]['verified']},{average_scores[model]['conversational']},{average_scores[model]['paper']}")
+            print(f"All Datasets,{model},{src},{trg},{average_scores[model][src][trg]['pass_1_greedy']},{average_scores[model][src][trg]['pass_1']},{average_scores[model][src][trg]['pass_5']},{average_scores[model]['verified']},{average_scores[model]['conversational']},{average_scores[model]['paper']}")
 

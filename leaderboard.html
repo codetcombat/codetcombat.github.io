@@ -332,7 +332,7 @@
     <div id="content" class="container-fluid d-flex flex-column gap-3">
 
       <div class="align-items-center justify-content-center" style="width: 100%; display: flex;">
-        <img src="misc/ibm.png" style="width: 17%; margin-right: auto;" alt="IBM">
+        <img src="misc/ibm.png" style="width: 20%; margin-right: auto;" alt="IBM">
         <h1 class="text-nowrap mt-5" style="font-size: 400%; margin-bottom: 4%;">🏆 Code Lingua 🏆</h1>
         <img src="misc/uiuc.png" style="width: 15%; margin-left: auto; margin-top: 1%;" alt="Intelligent CAT">
       </div>
@@ -378,7 +378,7 @@
       </div> -->
 
       <div class="container-fluid d-flex flex-column align-items-center">
-        <h4 class="fw-light justify-content-center" style="align-self: center;">✉️ You can reach out to <a href="https://alirezai.cs.illinois.edu" target="_blank">Ali</a> (<a href="mailto:alirezai@illinois.edu">alirezai@illinois.edu</a>) for any questions about the leaderboard ✉️</h4>
+        <p class="fw-light justify-content-center" style="font-size: larger;">✉️ Reach out to <a href="https://alirezai.cs.illinois.edu" target="_blank">Ali</a> (<a href="mailto:alirezai@illinois.edu">alirezai@illinois.edu</a>) or <a href="https://rangeetpan.github.io/" target="_blank">Rangeet</a> (<a href="mailto:rangeet.pan@ibm.com">rangeet.pan@ibm.com</a>) for questions about the leaderboard ✉️</p>
       </div>
 
       <div class="checkbox-container">
@@ -387,58 +387,8 @@
           <label style="font-weight: bolder;">Model:</label>
           <div id="modelCheckboxes" style="display: flex;">
             <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="GPT-4-0125-Preview" name="model" value="GPT-4-0125-Preview" checked>
-              <label style="margin-left: 5px;" for="GPT-4-0125-Preview">GPT-4-0125-Preview</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="GPT-4-0613" name="model" value="GPT-4-0613" checked>
-              <label style="margin-left: 5px;" for="GPT-4-0613">GPT-4-0613</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="GPT-3.5-Turbo" name="model" value="GPT-3.5-Turbo" checked>
-              <label style="margin-left: 5px;" for="GPT-3.5-Turbo">GPT-3.5-Turbo</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
               <input type="checkbox" id="Claude-3-Opus" name="model" value="Claude-3-Opus" checked>
               <label style="margin-left: 5px;" for="Claude-3-Opus">Claude-3-Opus</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="Gemini-1.0-Pro" name="model" value="Gemini-1.0-Pro" checked>
-              <label style="margin-left: 5px;" for="Gemini-1.0-Pro">Gemini-1.0-Pro</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="DeepSeekCoder-1.3B-INS" name="model" value="DeepSeekCoder-1.3B-INS" checked>
-              <label style="margin-left: 5px;" for="DeepSeekCoder-1.3B-INS">DeepSeekCoder-1.3B-INS</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="DeepSeekCoder-6.7B-INS" name="model" value="DeepSeekCoder-6.7B-INS" checked>
-              <label style="margin-left: 5px;" for="DeepSeekCoder-6.7B-INS">DeepSeekCoder-6.7B-INS</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="Magicoder-S-CL-7B" name="model" value="Magicoder-S-CL-7B" checked>
-              <label style="margin-left: 5px;" for="Magicoder-S-CL-7B">Magicoder-S-CL-7B</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="Magicoder-S-DS-6.7B" name="model" value="Magicoder-S-DS-6.7B" checked>
-              <label style="margin-left: 5px;" for="Magicoder-S-DS-6.7B">Magicoder-S-DS-6.7B</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="WizardCoder-15B" name="model" value="WizardCoder-15B" checked>
-              <label style="margin-left: 5px;" for="WizardCoder-15B">WizardCoder-15B</label>
-            </div>
-
-            <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="WizardCoder-33B" name="model" value="WizardCoder-33B" checked>
-              <label style="margin-left: 5px;" for="WizardCoder-33B">WizardCoder-33B</label>
             </div>
 
             <div style="display: flex; align-items: center;">
@@ -457,8 +407,48 @@
             </div>
 
             <div style="display: flex; align-items: center;">
-              <input type="checkbox" id="OctoCoder-15.5B" name="model" value="OctoCoder-15.5B" checked>
-              <label style="margin-left: 5px;" for="OctoCoder-15.5B">OctoCoder-15.5B</label>
+              <input type="checkbox" id="DeepSeekCoder-1.3B-INS" name="model" value="DeepSeekCoder-1.3B-INS" checked>
+              <label style="margin-left: 5px;" for="DeepSeekCoder-1.3B-INS">DeepSeekCoder-1.3B-INS</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="DeepSeekCoder-6.7B-INS" name="model" value="DeepSeekCoder-6.7B-INS" checked>
+              <label style="margin-left: 5px;" for="DeepSeekCoder-6.7B-INS">DeepSeekCoder-6.7B-INS</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="DeepSeekCoder-33B-INS" name="model" value="DeepSeekCoder-33B-INS" checked>
+              <label style="margin-left: 5px;" for="DeepSeekCoder-33B-INS">DeepSeekCoder-33B-INS</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="Gemini-1.0-Pro" name="model" value="Gemini-1.0-Pro" checked>
+              <label style="margin-left: 5px;" for="Gemini-1.0-Pro">Gemini-1.0-Pro</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="GPT-4-0125-Preview" name="model" value="GPT-4-0125-Preview" checked>
+              <label style="margin-left: 5px;" for="GPT-4-0125-Preview">GPT-4-0125-Preview</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="GPT-4-0613" name="model" value="GPT-4-0613" checked>
+              <label style="margin-left: 5px;" for="GPT-4-0613">GPT-4-0613</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="GPT-3.5-Turbo" name="model" value="GPT-3.5-Turbo" checked>
+              <label style="margin-left: 5px;" for="GPT-3.5-Turbo">GPT-3.5-Turbo</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="Magicoder-S-CL-7B" name="model" value="Magicoder-S-CL-7B" checked>
+              <label style="margin-left: 5px;" for="Magicoder-S-CL-7B">Magicoder-S-CL-7B</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="Magicoder-S-DS-6.7B" name="model" value="Magicoder-S-DS-6.7B" checked>
+              <label style="margin-left: 5px;" for="Magicoder-S-DS-6.7B">Magicoder-S-DS-6.7B</label>
             </div>
 
             <div style="display: flex; align-items: center;">
@@ -467,8 +457,23 @@
             </div>
 
             <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="OctoCoder-15.5B" name="model" value="OctoCoder-15.5B" checked>
+              <label style="margin-left: 5px;" for="OctoCoder-15.5B">OctoCoder-15.5B</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
               <input type="checkbox" id="Phi-2-2.7B" name="model" value="Phi-2-2.7B" checked>
               <label style="margin-left: 5px;" for="Phi-2-2.7B">Phi-2-2.7B</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="WizardCoder-15B" name="model" value="WizardCoder-15B" checked>
+              <label style="margin-left: 5px;" for="WizardCoder-15B">WizardCoder-15B</label>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="WizardCoder-33B" name="model" value="WizardCoder-33B" checked>
+              <label style="margin-left: 5px;" for="WizardCoder-33B">WizardCoder-33B</label>
             </div>
 
           </div>
@@ -480,50 +485,42 @@
         <div>
           <label style="font-weight: bolder;">Dataset:</label>
           <div id="datasetCheckboxes">
-            <input type="checkbox" id="All Datasets" name="dataset" value="All Datasets" checked>
+            <input type="radio" id="All Datasets" name="dataset" value="All Datasets" checked>
             <label style="margin-left: 5px;" for="All Datasets">All Datasets</label>
             <br>
-            <input type="checkbox" id="CodeNet" name="dataset" value="CodeNet">
-            <label style="margin-left: 5px;" for="CodeNet">CodeNet</label>
-            <br>
-            <input type="checkbox" id="Avatar" name="dataset" value="Avatar">
+            <input type="radio" id="Avatar" name="dataset" value="Avatar">
             <label style="margin-left: 5px;" for="Avatar">Avatar</label>
+            <br>
+            <input type="radio" id="CodeNet" name="dataset" value="CodeNet">
+            <label style="margin-left: 5px;" for="CodeNet">CodeNet</label>
           </div>
         </div>
 
         <div>
           <label style="font-weight: bolder;">Source Language:</label>
           <div id="sourceLangCheckboxes">
-            <input type="checkbox" id="JavaSource" name="sourceLang" value="Java">
-            <label style="margin-left: 5px;" for="JavaSource">Java</label>
-            <br>
             <input type="checkbox" id="CSource" name="sourceLang" value="C">
             <label style="margin-left: 5px;" for="CSource">C</label>
-            <br>
-            <input type="checkbox" id="PythonSource" name="sourceLang" value="Python" checked>
-            <label style="margin-left: 5px;" for="PythonSource">Python</label>
             <br>
             <input type="checkbox" id="CPlusPlusSource" name="sourceLang" value="C++">
             <label style="margin-left: 5px;" for="CPlusPlusSource">C++</label>
             <br>
             <input type="checkbox" id="GoSource" name="sourceLang" value="Go">
             <label style="margin-left: 5px;" for="GoSource">Go</label>
+            <br>
+            <input type="checkbox" id="JavaSource" name="sourceLang" value="Java">
+            <label style="margin-left: 5px;" for="JavaSource">Java</label>
+            <br>
+            <input type="checkbox" id="PythonSource" name="sourceLang" value="Python" checked>
+            <label style="margin-left: 5px;" for="PythonSource">Python</label>
           </div>
         </div>
         <div>
           <label style="font-weight: bolder;">Target Language:</label>
           <div id="targetLangCheckboxes">
 
-            <input type="checkbox" id="JavaTarget" name="targetLang" value="Java" checked>
-            <label style="margin-left: 5px;" for="JavaTarget">Java</label>
-            <br>
-
             <input type="checkbox" id="CTarget" name="targetLang" value="C">
             <label style="margin-left: 5px;" for="CTarget">C</label>
-            <br>
-
-            <input type="checkbox" id="PythonTarget" name="targetLang" value="Python">
-            <label style="margin-left: 5px;" for="PythonTarget">Python</label>
             <br>
 
             <input type="checkbox" id="CPlusPlusTarget" name="targetLang" value="C++">
@@ -532,6 +529,14 @@
 
             <input type="checkbox" id="GoTarget" name="targetLang" value="Go">
             <label style="margin-left: 5px;" for="GoTarget">Go</label>
+            <br>
+
+            <input type="checkbox" id="JavaTarget" name="targetLang" value="Java" checked>
+            <label style="margin-left: 5px;" for="JavaTarget">Java</label>
+            <br>
+
+            <input type="checkbox" id="PythonTarget" name="targetLang" value="Python">
+            <label style="margin-left: 5px;" for="PythonTarget">Python</label>
 
           </div>
         </div>

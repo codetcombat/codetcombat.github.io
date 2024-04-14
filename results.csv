@@ -279,34 +279,34 @@ Avatar,Mixtral-8x7b-INS-13B,Python,C,4.4,3.6,9.9,Y,Y,https://arxiv.org/abs/2401.
 Avatar,Mixtral-8x7b-INS-13B,Python,C++,8,5.9,19.9,Y,Y,https://arxiv.org/abs/2401.04088
 Avatar,Mixtral-8x7b-INS-13B,Python,Go,2,3,10.4,Y,Y,https://arxiv.org/abs/2401.04088
 Avatar,Mixtral-8x7b-INS-13B,Python,Java,31.2,28.6,42.8,Y,Y,https://arxiv.org/abs/2401.04088
-CodeNet,Phi-2-2.7B,C,C++,19.5,28.1,62.9,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,C,Go,1,1.9,8.5,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,C,Java,18.5,15,32.4,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,C,Python,31,31.6,42.9,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,C++,C,3,6.5,16.8,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,C++,Go,3.5,3.5,8.4,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,C++,Java,34,27.4,45.6,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,C++,Python,30.5,27.9,39,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,Go,C,5,8.3,24.3,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,Go,C++,16.5,17.6,42.5,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,Go,Java,1,3.8,17,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,Go,Python,27.5,27.4,37.6,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,Java,C,8,16.4,31.5,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,Java,C++,21.5,19.5,45.1,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,Java,Go,0.5,0.2,1.3,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,Java,Python,20,20.4,35.1,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,Python,C,7,9.3,27.1,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,Python,C++,28,24.2,50.6,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,Python,Go,0,0.4,2.1,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-CodeNet,Phi-2-2.7B,Python,Java,37.5,36.7,54.4,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-Avatar,Phi-2-2.7B,Java,C,5.2,4.3,9.9,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-Avatar,Phi-2-2.7B,Java,C++,12.4,9.4,26.3,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-Avatar,Phi-2-2.7B,Java,Go,0,0,0.2,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-Avatar,Phi-2-2.7B,Java,Python,22,21.6,34.5,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-Avatar,Phi-2-2.7B,Python,C,1.6,1.8,5.3,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-Avatar,Phi-2-2.7B,Python,C++,7.6,6.8,17.8,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-Avatar,Phi-2-2.7B,Python,Go,0,0,0.2,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-Avatar,Phi-2-2.7B,Python,Java,16.8,14.4,20.3,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
+CodeNet,Phi-2-2.7B,C,C++,19.5,28.1,62.9,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,C,Go,1,1.9,8.5,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,C,Java,18.5,15,32.4,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,C,Python,31,31.6,42.9,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,C++,C,3,6.5,16.8,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,C++,Go,3.5,3.5,8.4,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,C++,Java,34,27.4,45.6,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,C++,Python,30.5,27.9,39,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,Go,C,5,8.3,24.3,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,Go,C++,16.5,17.6,42.5,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,Go,Java,1,3.8,17,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,Go,Python,27.5,27.4,37.6,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,Java,C,8,16.4,31.5,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,Java,C++,21.5,19.5,45.1,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,Java,Go,0.5,0.2,1.3,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,Java,Python,20,20.4,35.1,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,Python,C,7,9.3,27.1,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,Python,C++,28,24.2,50.6,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,Python,Go,0,0.4,2.1,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+CodeNet,Phi-2-2.7B,Python,Java,37.5,36.7,54.4,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+Avatar,Phi-2-2.7B,Java,C,5.2,4.3,9.9,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+Avatar,Phi-2-2.7B,Java,C++,12.4,9.4,26.3,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+Avatar,Phi-2-2.7B,Java,Go,0,0,0.2,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+Avatar,Phi-2-2.7B,Java,Python,22,21.6,34.5,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+Avatar,Phi-2-2.7B,Python,C,1.6,1.8,5.3,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+Avatar,Phi-2-2.7B,Python,C++,7.6,6.8,17.8,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+Avatar,Phi-2-2.7B,Python,Go,0,0,0.2,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+Avatar,Phi-2-2.7B,Python,Java,16.8,14.4,20.3,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
 CodeNet,DeepSeekCoder-1.3B-INS,C,C++,22.5,44.7,81.2,Y,Y,https://arxiv.org/abs/2401.14196
 CodeNet,DeepSeekCoder-1.3B-INS,C,Go,43.5,44.1,61.7,Y,Y,https://arxiv.org/abs/2401.14196
 CodeNet,DeepSeekCoder-1.3B-INS,C,Java,55.5,58.9,73.6,Y,Y,https://arxiv.org/abs/2401.14196
@@ -475,6 +475,34 @@ Avatar,DeepSeekCoder-6.7B-INS,Python,C,2.4,9.1,23.5,Y,Y,https://arxiv.org/abs/24
 Avatar,DeepSeekCoder-6.7B-INS,Python,C++,14.4,17.6,37.6,Y,Y,https://arxiv.org/abs/2401.14196
 Avatar,DeepSeekCoder-6.7B-INS,Python,Go,23.6,22,42.9,Y,Y,https://arxiv.org/abs/2401.14196
 Avatar,DeepSeekCoder-6.7B-INS,Python,Java,51.6,52,62.5,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,C,C++,22,54,90,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,C,Go,74.5,74.8,90,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,C,Java,79,79.1,84.5,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,C,Python,62,62.8,75.7,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,C++,C,9,24.2,66.6,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,C++,Go,72,71.8,84.3,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,C++,Java,84,82.3,87.4,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,C++,Python,62,62.9,77.5,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,Go,C,12,55.8,78.3,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,Go,C++,44,39.4,84,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,Go,Java,72.5,74,84.8,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,Go,Python,54.5,54.9,75.6,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,Java,C,9.5,30.9,68.9,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,Java,C++,48,40.5,84.9,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,Java,Go,52,53.5,83.6,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,Java,Python,55,52.7,68,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,Python,C,11,24.8,64.4,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,Python,C++,46.5,49.1,88.6,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,Python,Go,52.5,50.5,79.6,Y,Y,https://arxiv.org/abs/2401.14196
+CodeNet,DeepSeekCoder-33B-INS,Python,Java,86,86.5,92.3,Y,Y,https://arxiv.org/abs/2401.14196
+Avatar,DeepSeekCoder-33B-INS,Java,C,8.8,12.8,32.4,Y,Y,https://arxiv.org/abs/2401.14196
+Avatar,DeepSeekCoder-33B-INS,Java,C++,28.4,10.3,31.7,Y,Y,https://arxiv.org/abs/2401.14196
+Avatar,DeepSeekCoder-33B-INS,Java,Go,60,58.7,73,Y,Y,https://arxiv.org/abs/2401.14196
+Avatar,DeepSeekCoder-33B-INS,Java,Python,60,59.5,74.7,Y,Y,https://arxiv.org/abs/2401.14196
+Avatar,DeepSeekCoder-33B-INS,Python,C,2.8,10,25.1,Y,Y,https://arxiv.org/abs/2401.14196
+Avatar,DeepSeekCoder-33B-INS,Python,C++,8,9.3,26.8,Y,Y,https://arxiv.org/abs/2401.14196
+Avatar,DeepSeekCoder-33B-INS,Python,Go,33.2,30.1,46,Y,Y,https://arxiv.org/abs/2401.14196
+Avatar,DeepSeekCoder-33B-INS,Python,Java,59.2,58.4,70.7,Y,Y,https://arxiv.org/abs/2401.14196
 All Datasets,CodeLlama-7B,C,C++,18.0,35.9,77.4,Y,Y,https://arxiv.org/abs/2308.12950
 All Datasets,CodeLlama-7B,C,Go,3.0,11.3,32.7,Y,Y,https://arxiv.org/abs/2308.12950
 All Datasets,CodeLlama-7B,C,Java,59.5,59.9,71.0,Y,Y,https://arxiv.org/abs/2308.12950
@@ -675,26 +703,26 @@ All Datasets,Mixtral-8x7b-INS-13B,Python,C,6.2,7.6,22.75,Y,Y,https://arxiv.org/a
 All Datasets,Mixtral-8x7b-INS-13B,Python,C++,9.0,8.55,25.2,Y,Y,https://arxiv.org/abs/2401.04088
 All Datasets,Mixtral-8x7b-INS-13B,Python,Go,4.5,5.2,15.3,Y,Y,https://arxiv.org/abs/2401.04088
 All Datasets,Mixtral-8x7b-INS-13B,Python,Java,45.6,43.0,58.85,Y,Y,https://arxiv.org/abs/2401.04088
-All Datasets,Phi-2-2.7B,C,C++,19.5,28.1,62.9,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,C,Go,1.0,1.9,8.5,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,C,Java,18.5,15.0,32.4,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,C,Python,31.0,31.6,42.9,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,C++,C,3.0,6.5,16.8,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,C++,Go,3.5,3.5,8.4,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,C++,Java,34.0,27.4,45.6,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,C++,Python,30.5,27.9,39.0,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,Go,C,5.0,8.3,24.3,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,Go,C++,16.5,17.6,42.5,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,Go,Java,1.0,3.8,17.0,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,Go,Python,27.5,27.4,37.6,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,Java,C,6.6,10.35,20.7,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,Java,C++,16.95,14.45,35.7,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,Java,Go,0.25,0.1,0.75,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,Java,Python,21.0,21.0,34.8,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,Python,C,4.3,5.55,16.2,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,Python,C++,17.8,15.5,34.2,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,Python,Go,0.0,0.2,1.15,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
-All Datasets,Phi-2-2.7B,Python,Java,27.15,25.55,37.35,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-smAll Datasets-language-models/
+All Datasets,Phi-2-2.7B,C,C++,19.5,28.1,62.9,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,C,Go,1.0,1.9,8.5,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,C,Java,18.5,15.0,32.4,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,C,Python,31.0,31.6,42.9,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,C++,C,3.0,6.5,16.8,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,C++,Go,3.5,3.5,8.4,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,C++,Java,34.0,27.4,45.6,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,C++,Python,30.5,27.9,39.0,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,Go,C,5.0,8.3,24.3,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,Go,C++,16.5,17.6,42.5,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,Go,Java,1.0,3.8,17.0,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,Go,Python,27.5,27.4,37.6,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,Java,C,6.6,10.35,20.7,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,Java,C++,16.95,14.45,35.7,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,Java,Go,0.25,0.1,0.75,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,Java,Python,21.0,21.0,34.8,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,Python,C,4.3,5.55,16.2,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,Python,C++,17.8,15.5,34.2,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,Python,Go,0.0,0.2,1.15,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
+All Datasets,Phi-2-2.7B,Python,Java,27.15,25.55,37.35,Y,Y,https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/
 All Datasets,DeepSeekCoder-1.3B-INS,C,C++,22.5,44.7,81.2,Y,Y,https://arxiv.org/abs/2401.14196
 All Datasets,DeepSeekCoder-1.3B-INS,C,Go,43.5,44.1,61.7,Y,Y,https://arxiv.org/abs/2401.14196
 All Datasets,DeepSeekCoder-1.3B-INS,C,Java,55.5,58.9,73.6,Y,Y,https://arxiv.org/abs/2401.14196
@@ -815,3 +843,23 @@ All Datasets,DeepSeekCoder-6.7B-INS,Python,C,5.95,14.55,39.15,Y,Y,https://arxiv.
 All Datasets,DeepSeekCoder-6.7B-INS,Python,C++,28.45,31.15,61.9,Y,Y,https://arxiv.org/abs/2401.14196
 All Datasets,DeepSeekCoder-6.7B-INS,Python,Go,28.3,29.25,59.2,Y,Y,https://arxiv.org/abs/2401.14196
 All Datasets,DeepSeekCoder-6.7B-INS,Python,Java,68.3,68.1,76.7,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,C,C++,22.0,54.0,90.0,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,C,Go,74.5,74.8,90.0,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,C,Java,79.0,79.1,84.5,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,C,Python,62.0,62.8,75.7,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,C++,C,9.0,24.2,66.6,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,C++,Go,72.0,71.8,84.3,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,C++,Java,84.0,82.3,87.4,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,C++,Python,62.0,62.9,77.5,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,Go,C,12.0,55.8,78.3,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,Go,C++,44.0,39.4,84.0,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,Go,Java,72.5,74.0,84.8,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,Go,Python,54.5,54.9,75.6,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,Java,C,9.15,21.85,50.65,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,Java,C++,38.2,25.4,58.3,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,Java,Go,56.0,56.1,78.3,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,Java,Python,57.5,56.1,71.35,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,Python,C,6.9,17.4,44.75,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,Python,C++,27.25,29.2,57.7,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,Python,Go,42.85,40.3,62.8,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,DeepSeekCoder-33B-INS,Python,Java,72.6,72.45,81.5,Y,Y,https://arxiv.org/abs/2401.14196
