@@ -503,6 +503,146 @@ Avatar,DeepSeekCoder-33B-INS,Python,C,2.8,10,25.1,Y,Y,https://arxiv.org/abs/2401
 Avatar,DeepSeekCoder-33B-INS,Python,C++,8,9.3,26.8,Y,Y,https://arxiv.org/abs/2401.14196
 Avatar,DeepSeekCoder-33B-INS,Python,Go,33.2,30.1,46,Y,Y,https://arxiv.org/abs/2401.14196
 Avatar,DeepSeekCoder-33B-INS,Python,Java,59.2,58.4,70.7,Y,Y,https://arxiv.org/abs/2401.14196
+Avatar,CodeGemma-7b-INS,Java,C,24.8,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+Avatar,CodeGemma-7b-INS,Java,C++,45.2,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+Avatar,CodeGemma-7b-INS,Java,Python,29.6,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+Avatar,CodeGemma-7b-INS,Java,Go,7.6,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+Avatar,CodeGemma-7b-INS,Python,C,10.8,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+Avatar,CodeGemma-7b-INS,Python,C++,22.8,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+Avatar,CodeGemma-7b-INS,Python,Java,30,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+Avatar,CodeGemma-7b-INS,Python,Go,3.6,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,C,C++,79.5,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,C,Java,60.5,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,C,Python,44,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,C,Go,48,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,C++,C,29,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,C++,Java,58,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,C++,Python,39,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,C++,Go,32,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,Java,C,42.5,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,Java,C++,65,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,Java,Python,33,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,Java,Go,13,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,Python,C,35,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,Python,C++,44,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,Python,Java,59,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,Python,Go,5.5,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,Go,C,31,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,Go,C++,49.5,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,Go,Java,55.5,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+CodeNet,CodeGemma-7b-INS,Go,Python,33.5,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+Avatar,GraniteCode-3b-INS,Java,C,14.4,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-3b-INS,Java,C++,52.8,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-3b-INS,Java,Python,45.6,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-3b-INS,Java,Go,13.6,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-3b-INS,Python,C,14,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-3b-INS,Python,C++,30,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-3b-INS,Python,Java,14,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-3b-INS,Python,Go,0.8,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,C,C++,78.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,C,Java,64.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,C,Python,38.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,C,Go,43.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,C++,C,43.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,C++,Java,68,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,C++,Python,46.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,C++,Go,25.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,Java,C,54,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,Java,C++,73.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,Java,Python,42.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,Java,Go,26.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,Python,C,23.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,Python,C++,61.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,Python,Java,16,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,Python,Go,1.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,Go,C,46.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,Go,C++,62.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,Go,Java,2.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-3b-INS,Go,Python,20,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-8b-INS,Java,C,41.2,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-8b-INS,Java,C++,41.6,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-8b-INS,Java,Python,57.2,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-8b-INS,Java,Go,15.2,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-8b-INS,Python,C,27.6,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-8b-INS,Python,C++,38.8,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-8b-INS,Python,Java,32.4,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-8b-INS,Python,Go,8.4,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,C,C++,78.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,C,Java,72,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,C,Python,57,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,C,Go,18.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,C++,C,54,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,C++,Java,74,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,C++,Python,56.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,C++,Go,24.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,Java,C,58,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,Java,C++,73,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,Java,Python,58.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,Java,Go,19,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,Python,C,55,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,Python,C++,71.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,Python,Java,47,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,Python,Go,12.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,Go,C,50,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,Go,C++,65.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,Go,Java,58,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-8b-INS,Go,Python,52.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-20b-INS,Java,C,31.6,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-20b-INS,Java,C++,48,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-20b-INS,Java,Python,30,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-20b-INS,Java,Go,22.8,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-20b-INS,Python,C,28,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-20b-INS,Python,C++,33.2,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-20b-INS,Python,Java,36.8,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-20b-INS,Python,Go,19.2,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,C,C++,81.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,C,Java,71.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,C,Python,39,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,C,Go,50,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,C++,C,55.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,C++,Java,70.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,C++,Python,40.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,C++,Go,31.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,Java,C,58,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,Java,C++,57.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,Java,Python,38.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,Java,Go,44,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,Python,C,55.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,Python,C++,63.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,Python,Java,70,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,Python,Go,33,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,Go,C,55,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,Go,C++,63,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,Go,Java,58,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-20b-INS,Go,Python,55.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-34b-INS,Java,C,44,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-34b-INS,Java,C++,56.8,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-34b-INS,Java,Python,49.6,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-34b-INS,Java,Go,16.4,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-34b-INS,Python,C,28.8,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-34b-INS,Python,C++,28.4,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-34b-INS,Python,Java,45.6,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+Avatar,GraniteCode-34b-INS,Python,Go,19.2,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,C,C++,83,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,C,Java,74.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,C,Python,54.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,C,Go,15.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,C++,C,61,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,C++,Java,69,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,C++,Python,42.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,C++,Go,25,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,Java,C,66.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,Java,C++,75,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,Java,Python,63,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,Java,Go,40.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,Python,C,62.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,Python,C++,79,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,Python,Java,77,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,Python,Go,49,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,Go,C,58,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,Go,C++,62,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,Go,Java,68,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+CodeNet,GraniteCode-34b-INS,Go,Python,66,-,-,Y,Y,https://arxiv.org/abs/2405.04324
 All Datasets,CodeLlama-7B,C,C++,18.0,35.9,77.4,Y,Y,https://arxiv.org/abs/2308.12950
 All Datasets,CodeLlama-7B,C,Go,3.0,11.3,32.7,Y,Y,https://arxiv.org/abs/2308.12950
 All Datasets,CodeLlama-7B,C,Java,59.5,59.9,71.0,Y,Y,https://arxiv.org/abs/2308.12950
@@ -863,3 +1003,103 @@ All Datasets,DeepSeekCoder-33B-INS,Python,C,6.9,17.4,44.75,Y,Y,https://arxiv.org
 All Datasets,DeepSeekCoder-33B-INS,Python,C++,27.25,29.2,57.7,Y,Y,https://arxiv.org/abs/2401.14196
 All Datasets,DeepSeekCoder-33B-INS,Python,Go,42.85,40.3,62.8,Y,Y,https://arxiv.org/abs/2401.14196
 All Datasets,DeepSeekCoder-33B-INS,Python,Java,72.6,72.45,81.5,Y,Y,https://arxiv.org/abs/2401.14196
+All Datasets,CodeGemma-7b-INS,Java,C,33.65,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,Java,C++,55.1,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,Java,Python,31.3,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,Java,Go,10.3,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,Python,C,22.9,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,Python,C++,33.4,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,Python,Java,44.5,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,Python,Go,4.55,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,C,C++,79.5,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,C,Java,60.5,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,C,Python,44.0,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,C,Go,48.0,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,C++,C,29.0,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,C++,Java,58.0,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,C++,Python,39.0,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,C++,Go,32.0,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,Go,C,31.0,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,Go,C++,49.5,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,Go,Java,55.5,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,CodeGemma-7b-INS,Go,Python,33.5,-,-,Y,Y,https://storage.googleapis.com/deepmind-media/gemma/codegemma_report.pdf
+All Datasets,GraniteCode-3b-INS,Java,C,34.2,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,Java,C++,63.15,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,Java,Python,44.05,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,Java,Go,20.05,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,Python,C,18.75,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,Python,C++,45.75,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,Python,Java,15.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,Python,Go,1.15,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,C,C++,78.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,C,Java,64.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,C,Python,38.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,C,Go,43.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,C++,C,43.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,C++,Java,68.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,C++,Python,46.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,C++,Go,25.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,Go,C,46.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,Go,C++,62.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,Go,Java,2.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-3b-INS,Go,Python,20.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,Java,C,49.6,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,Java,C++,57.3,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,Java,Python,57.85,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,Java,Go,17.1,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,Python,C,41.3,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,Python,C++,55.15,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,Python,Java,39.7,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,Python,Go,10.45,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,C,C++,78.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,C,Java,72.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,C,Python,57.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,C,Go,18.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,C++,C,54.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,C++,Java,74.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,C++,Python,56.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,C++,Go,24.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,Go,C,50.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,Go,C++,65.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,Go,Java,58.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-8b-INS,Go,Python,52.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,Java,C,44.8,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,Java,C++,52.75,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,Java,Python,34.25,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,Java,Go,33.4,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,Python,C,41.75,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,Python,C++,48.35,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,Python,Java,53.4,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,Python,Go,26.1,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,C,C++,81.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,C,Java,71.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,C,Python,39.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,C,Go,50.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,C++,C,55.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,C++,Java,70.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,C++,Python,40.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,C++,Go,31.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,Go,C,55.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,Go,C++,63.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,Go,Java,58.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-20b-INS,Go,Python,55.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,Java,C,55.25,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,Java,C++,65.9,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,Java,Python,56.3,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,Java,Go,28.45,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,Python,C,45.65,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,Python,C++,53.7,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,Python,Java,61.3,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,Python,Go,34.1,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,C,C++,83.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,C,Java,74.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,C,Python,54.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,C,Go,15.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,C++,C,61.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,C++,Java,69.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,C++,Python,42.5,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,C++,Go,25.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,Go,C,58.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,Go,C++,62.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,Go,Java,68.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
+All Datasets,GraniteCode-34b-INS,Go,Python,66.0,-,-,Y,Y,https://arxiv.org/abs/2405.04324
